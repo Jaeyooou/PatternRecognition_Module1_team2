@@ -105,7 +105,7 @@ def Find_bottom_WhitePx(img):
         if imthres[height - 1, w] == 255:
             cnt = cnt + 1
     white_area = cnt / width * 100
-    if white_area < 40:
+    if white_area < 60:
         print("3")
     else:
         print("2")
