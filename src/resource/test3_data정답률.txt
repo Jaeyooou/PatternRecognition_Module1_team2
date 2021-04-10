@@ -1,0 +1,219 @@
+C:\Users\Sejong\AppData\Local\Microsoft\WindowsApps\python3.8.exe "C:/Users/Sejong/DFPL Dropbox/Byun Jaewook/Jaehyun/2021-1학기/Pattern Recognition/src/PatternRecognition_Module1_team2/src/image_practice.py"
+wrong :오답 : 이미지는 14이며 제출한 답은:9 오답 : 이미지는 25이며 제출한 답은:3
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 38 38 143 143
+정답 : 이미지는 : 0
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :110/42
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+38.095238095238095
+Find_height_width_rate ,1 과 2,3 구분 
+정답 : 이미지는 : 1
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :112/64
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+37.5
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 100.0
+정답 : 이미지는 : 2
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :114/64
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+35.9375
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 40.625
+정답 : 이미지는 : 3
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 25 21 165 164
+정답 : 이미지는 : 4
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :112/64
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+78.125
+Find_Center_of_Gravity2 진입  , 5 7 구분용
+이미지 height :112
+무게중심 y 좌표 :55
+무게중심 y 좌표 / height (비율 ) : 0.49107142857142855
+정답 : 이미지는 : 5
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 144 145 35 43
+정답 : 이미지는 : 6
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :106/68
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+100.0
+Find_Center_of_Gravity2 진입  , 5 7 구분용
+이미지 height :106
+무게중심 y 좌표 :40
+무게중심 y 좌표 / height (비율 ) : 0.37735849056603776
+정답 : 이미지는 : 7
+도형의 개수 : 3
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+정답 : 이미지는 : 8
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 18 17 30 23
+정답 : 이미지는 : 9
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 106 106 30 30
+정답 : 이미지는 : 10
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :118/26
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+26.923076923076923
+Find_height_width_rate ,1 과 2,3 구분 
+정답 : 이미지는 : 11
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :114/60
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+25.0
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 100.0
+정답 : 이미지는 : 12
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :118/62
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+25.806451612903224
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 35.483870967741936
+정답 : 이미지는 : 13
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 27 26 169 168
+오답 : 이미지는 14이며 제출한 답은:9
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :116/62
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+72.58064516129032
+Find_Center_of_Gravity2 진입  , 5 7 구분용
+이미지 height :116
+무게중심 y 좌표 :57
+무게중심 y 좌표 / height (비율 ) : 0.49137931034482757
+정답 : 이미지는 : 15
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 182 182 124 129
+정답 : 이미지는 : 16
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :116/62
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+96.7741935483871
+Find_Center_of_Gravity2 진입  , 5 7 구분용
+이미지 height :116
+무게중심 y 좌표 :41
+무게중심 y 좌표 / height (비율 ) : 0.35344827586206895
+정답 : 이미지는 : 17
+도형의 개수 : 3
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+정답 : 이미지는 : 18
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 182 181 90 85
+정답 : 이미지는 : 19
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 131 131 177 177
+정답 : 이미지는 : 20
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :58/28
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+14.285714285714285
+Find_height_width_rate ,1 과 2,3 구분 
+정답 : 이미지는 : 21
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :60/38
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+44.73684210526316
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 92.10526315789474
+정답 : 이미지는 : 22
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :62/38
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+26.31578947368421
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 52.63157894736842
+정답 : 이미지는 : 23
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 116 115 170 170
+정답 : 이미지는 : 24
+도형의 개수 : 1
+Resize 적용 
+2
+height , width :16/12
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+58.333333333333336
+Find_height_width_rate ,1 과 2,3 구분 
+숫자부분의 면적은 : 41.66666666666667
+오답 : 이미지는 25이며 제출한 답은:3
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 184 185 122 125
+정답 : 이미지는 : 26
+도형의 개수 : 1
+Resize 적용 
+1
+height , width :62/38
+가우시안필터 적용
+Find_top_Whitepx , 1,2,3,5,7 구분 
+89.47368421052632
+Find_Center_of_Gravity2 진입  , 5 7 구분용
+이미지 height :62
+무게중심 y 좌표 :21
+무게중심 y 좌표 / height (비율 ) : 0.3387096774193548
+정답 : 이미지는 : 27
+도형의 개수 : 3
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+정답 : 이미지는 : 28
+도형의 개수 : 2
+Find_Center_of_Gravity 진입  ,0,4,6,8,9 판단 
+숫자의 무게중심 : 35 34 169 166
+정답 : 이미지는 : 29
+
+Process finished with exit code 0
+
