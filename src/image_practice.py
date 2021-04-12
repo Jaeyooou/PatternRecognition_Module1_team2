@@ -110,6 +110,7 @@ def Find_bottom_WhitePx(img):
     print("숫자부분의 면적은 : " + str(white_area))
     if white_area < 80:
         return 3
+
     else:
         return 2
     # 고딕3 : 28   27.692307692307693 %
