@@ -7,7 +7,6 @@ import cv2
 
 # 내부도형 검출하는 코드 컨투어가 1이면 내부도형 x , 2 이상이면 내부도형 존재
 def FindContours(src):  # 컨투어의 개수
-    contour_src = src.copy()
     gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, (3, 3), 0)
     ret, binary = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
@@ -23,7 +22,6 @@ def FindContours(src):  # 컨투어의 개수
 
 # 컨투어가 2 이상일 때 -> 내부도형 존재할 때 , 8/0,4,6,9 판단
 def Find_Center_of_Gravity(src):
-    contour_src = src.copy()
     gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, (3, 3), 0)
     ret, binary = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
@@ -56,14 +54,13 @@ def Find_Center_of_Gravity(src):
 
 
 def Find_Center_of_Gravity2(src):
-    contour_src = src.copy()
     gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
     ret, binary = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
     binary = cv2.bitwise_not(binary)
     contours = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)[0]
     height, width = src.shape[:2]
     M = cv2.moments(contours[0])
-    cY_weight = int(M['m01'] / M['m00'])
+    cY_weight = (M['m01'] / M['m00'])
     cY_rate = cY_weight / height
     print("이미지 height :" + str(height))
     print("무게중심 y 좌표 :" + str(cY_weight))
@@ -131,7 +128,7 @@ def Find_top_Whitepx(img):
             cnt = cnt + 1
     white_area = cnt / width * 100
     print("top_white_area:", white_area)
-    if white_area > 70:
+    if white_area > 55:
         # 5,7 둘중 하나 임
         return True
     else:
@@ -168,17 +165,14 @@ def Resize(src):
         break  # 만약 숫자 안에 도형이 하나 더 있으면 안찍히게 하기 위해서
     return crop_upper_img
 
-## main ##
+#main ##
 if __name__ == '__main__':
 
-    path = 'resource/test2/6.png'  # 이미지 입력
+    path = 'resource/test3/0.png'  # 이미지 입력
     src = cv2.imread(path)
     resize_img = Resize(src)
     re_Gousian_img = GousianFilter(resize_img)
     Answer_num = None
-
-    # Gousian_img = GousianFilter(resize_img)
-    # Find_top_Whitepx(Gousian_img)
 
     if FindContours(src) == True:  # 0,4,6,8,9 판단
         Answer_num = Find_Center_of_Gravity(src)
@@ -192,5 +186,32 @@ if __name__ == '__main__':
                 Answer_num = Find_bottom_WhitePx(re_Gousian_img)
             else:
                 Answer_num =1
-
+    print("---------------------------------------------------------------------------")
+    print("이미지는 : " + path)
     print("정답은 : " + str(Answer_num))
+
+
+# if __name__ == '__main__':
+#      for i in range(0,30):
+#
+#          path= 'resource/test3/'+str(i)+'.png' #이미지 입력
+#          src = cv2.imread(path)
+#          answer = None # 초기화
+#          if FindContours(src) == True: # 0,4,6,8,9 판단
+#             answer = Find_Center_of_Gravity(src)
+#          else :#1,2,3,5,7 판단
+#              resize_img = Resize(src)
+#              Gousian_img = GousianFilter(resize_img)
+#              if Find_top_Whitepx(Gousian_img) == True:# 5,7 판단
+#                  #숫자의 윗면적이 70퍼센트를 차지한다고 한다면
+#                 #무게중심 판단
+#                 answer =Find_Center_of_Gravity2(Gousian_img)
+#              else :# 1,2,3 판단
+#                  if Find_heigth_width_rate(Gousian_img) == False:
+#                     answer = Find_bottom_WhitePx(Gousian_img)
+#                  else:
+#                     answer = 1
+#          print("----------------------------------------------------")
+#          print("이미지는 : " + path)
+#          print("정답은 : " + str(answer))
+#          print("----------------------------------------------------")
